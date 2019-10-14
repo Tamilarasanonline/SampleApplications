@@ -73,43 +73,6 @@
 	</build>
 
 
-	<repositories>
-		<repository>
-			<id>project-local</id>
-			<url>file://${project.basedir}/lib</url>
-		</repository>
-		<repository>
-			<id>release</id>
-			<url>https://artifactory-new.pru.intranet.asia:8443/artifactory/maven-pacs-irascom</url>
-			<snapshots>
-				<enabled>false</enabled>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-		</repository>
-	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>release</id>
-			<url>https://artifactory-new.pru.intranet.asia:8443/artifactory/maven-pacs-irascom</url>
-			<snapshots>
-				<enabled>false</enabled>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-		</pluginRepository>
-	</pluginRepositories>
-	<distributionManagement>
-		<repository>
-			<id>release</id>
-			<url>https://artifactory-new.pru.intranet.asia:8443/artifactory/maven-pacs-irascom-local</url>
-		</repository>
-	</distributionManagement>
+	
 
 </project>
