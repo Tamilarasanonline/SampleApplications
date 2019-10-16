@@ -1,0 +1,162 @@
+{
+	"id": "db94fec3-733e-23b2-ebb1-d9fec4b5efef",
+	"name": "ESBServic",
+	"description": "",
+	"order": [
+		"5054471c-6c2c-fa17-6e5b-05b5e195f3b2",
+		"c6d5c9c7-08ac-9b49-ffc2-522c9def5683",
+		"22caa5e5-43c9-5f3a-5b46-90eb53c7d354",
+		"1fa31059-4025-fa87-34ba-447b9ec4c81f",
+		"c397b192-a0a8-20d9-e54d-327f0cb7ac27"
+	],
+	"folders": [],
+	"timestamp": 1571043046766,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1fa31059-4025-fa87-34ba-447b9ec4c81f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/registerService",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1571070395469,
+			"name": "http://localhost:8080/registerService Update",
+			"description": "",
+			"collectionId": "db94fec3-733e-23b2-ebb1-d9fec4b5efef",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"AgentService\",\n    \"endpoints\": [\n        {\n            \"name\": \"/agent1\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent1/{id}\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent1/search\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        }\n    ]\n}"
+		},
+		{
+			"id": "22caa5e5-43c9-5f3a-5b46-90eb53c7d354",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/registerService",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1571070393311,
+			"name": "http://localhost:8080/registerService",
+			"description": "",
+			"collectionId": "db94fec3-733e-23b2-ebb1-d9fec4b5efef",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"AgentService\",\n    \"endpoints\": [\n        {\n            \"name\": \"/agent\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent/{id}\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent/search\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        }\n    ]\n}"
+		},
+		{
+			"id": "5054471c-6c2c-fa17-6e5b-05b5e195f3b2",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/test",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1571044668304,
+			"name": "http://localhost:8080/test",
+			"description": "",
+			"collectionId": "db94fec3-733e-23b2-ebb1-d9fec4b5efef",
+			"responses": []
+		},
+		{
+			"id": "c397b192-a0a8-20d9-e54d-327f0cb7ac27",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/unregisterService",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1571070516812,
+			"name": "http://localhost:8080/registerService Delete",
+			"description": "",
+			"collectionId": "db94fec3-733e-23b2-ebb1-d9fec4b5efef",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"AgentService\",\n    \"endpoints\": [\n        {\n            \"name\": \"/agent1\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent1/{id}\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent1/search\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        }\n    ]\n}"
+		},
+		{
+			"id": "c6d5c9c7-08ac-9b49-ffc2-522c9def5683",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/lookupService?serviceName=AgentService",
+			"queryParams": [
+				{
+					"key": "serviceName",
+					"value": "AgentService",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1571070390976,
+			"name": "http://localhost:8080/lookupService",
+			"description": "",
+			"collectionId": "db94fec3-733e-23b2-ebb1-d9fec4b5efef",
+			"responses": []
+		}
+	]
+}
