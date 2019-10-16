@@ -1,0 +1,118 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ESBServic",
+		"_postman_id": "db94fec3-733e-23b2-ebb1-d9fec4b5efef",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/test",
+			"request": {
+				"url": "http://localhost:8080/test",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/lookupService",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/lookupService?serviceName=AgentService",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lookupService"
+					],
+					"query": [
+						{
+							"key": "serviceName",
+							"value": "AgentService",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/registerService",
+			"request": {
+				"url": "http://localhost:8080/registerService",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"AgentService\",\n    \"endpoints\": [\n        {\n            \"name\": \"/agent\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent/{id}\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent/search\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/registerService Update",
+			"request": {
+				"url": "http://localhost:8080/registerService",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"AgentService\",\n    \"endpoints\": [\n        {\n            \"name\": \"/agent1\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent1/{id}\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent1/search\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/registerService Delete",
+			"request": {
+				"url": "http://localhost:8080/unregisterService",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"AgentService\",\n    \"endpoints\": [\n        {\n            \"name\": \"/agent1\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent1/{id}\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        },\n        {\n            \"name\": \"/agent1/search\",\n            \"type\": \"QUEUE\",\n            \"schema\": \"{ }\",\n            \"service\": null\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
