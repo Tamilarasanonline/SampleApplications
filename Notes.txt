@@ -1,0 +1,18 @@
+ 
+Queue (P2P) based sync request-response messaging model:
+
+1. Client looks up the service object from the service registry using lookup API call
+2. Endpoint topic name is extract the from the service object based on the endpoint name
+3. Client creates the request message object from the endpoint message schema
+4. Client populates the message payload with the request data
+5. Client publishes the message on the endpoint using publishMessage API call. The client library internally populates all the headers of the message including correlationId and replyTo topic name of the client. The library internally makes sure message is successfully published on the bus taking care of retries during failure
+6. Client invokes receiveMessage API call waiting for response message.
+7. The service which has subscribed on the topic receives the message. The message is processed by the service
+8. Service creates a response message object from the endpoint message schema
+9. Service populates the message payload with response data
+10. Service publishes the message on the client replyTo topic using publishMessageAPI. The client library internally populates all the headers of the message including correlationId. The library internally makes sure message is successfully published on the bus taking care of retries during failure
+11. Client gets the response message from the service from the receiveMessage API call
+
+
+ESBTP_AgentService__Agent
+ESBTP_AgentService__agent
