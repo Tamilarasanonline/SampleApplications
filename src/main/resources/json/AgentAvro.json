@@ -1,0 +1,65 @@
+{
+	"type": "record",
+	"namespace": "com.prudential.pruservice.vpms.entity",
+	"name": "Agent",
+	"fields": [
+		{
+			"name": "id",
+			"type": "string",
+			"default": "NONE"
+		},
+		{
+			"name": "name",
+			"type": "string",
+			"default": "NONE"
+		},
+		{
+			"name": "clientId",
+			"type": "string",
+			"default": "NONE"
+		},
+		{
+			"name": "type",
+			"type": "string",
+			"default": "NONE"
+		},
+		{
+			"name": "addresses",
+			"type": {
+				"type": "array",
+				"items": {
+					"name": "Address",
+					"type": "record",
+					"namespace": "com.prudential.pruservice.vpms.entity",
+					"fields": [
+						{
+							"name": "street",
+							"type": "string",
+							"default": "NONE"
+						},
+						{
+							"name": "city",
+							"type": "string",
+							"default": "NONE"
+						},
+						{
+							"name": "state",
+							"type": "string",
+							"default": "NONE"
+						},
+						{
+							"name": "country",
+							"type": "string",
+							"default": "NONE"
+						},
+						{
+							"name": "zip",
+							"type": "string",
+							"default": "NONE"
+						}
+					]
+				}
+			}
+		}
+	]
+}
